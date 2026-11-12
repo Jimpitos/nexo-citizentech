@@ -1,0 +1,14 @@
+{
+  "name": "nexo-citizentech",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NEXO - Inteligência Territorial para Prevenção de Riscos Climáticos (Global Solution 02/2026)",
+  "scripts": {
+    "lint": "htmlhint \"src/**/*.html\"",
+    "test": "node --test",
+    "start": "npx --yes serve src"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}

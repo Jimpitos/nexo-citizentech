@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXO — Inteligência Territorial para Prevenção de Riscos Climáticos</title>
+  <meta name="description" content="Plataforma CitizenTech que integra dados públicos para identificar territórios expostos a inundações e apoiar ações preventivas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="wrap topo__in">
+      <span class="marca" aria-label="NEXO">NEXO</span>
+      <nav aria-label="Seções">
+        <a href="#problema">Problema</a>
+        <a href="#regioes">Regiões</a>
+        <a href="#fontes">Fontes de dados</a>
+        <a href="#escopo">Escopo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">CitizenTech · Cloud Solutions &amp; Scalable Infrastructure</p>
+        <h1>Onde a chuva encontra a vulnerabilidade.</h1>
+        <p class="lead">
+          O NEXO integra dados públicos ambientais, hidrológicos, geográficos e socioeconômicos
+          para ajudar gestores a identificar territórios expostos a desastres e priorizar ações preventivas.
+          Primeiro caso de uso: <strong>inundações e eventos hidrológicos</strong> associados às chuvas intensas.
+        </p>
+      </div>
+    </section>
+
+    <section id="problema" class="wrap sec">
+      <h2>O problema em números</h2>
+      <p class="nota">Decretações de situação de emergência ou calamidade pública, Brasil, 2013–2024.
+        Fonte: Ministério da Saúde, com dados do S2ID. São decretações administrativas, não uma contagem de todos os eventos físicos.</p>
+      <div id="indicadores" class="cards" aria-live="polite"></div>
+
+      <div class="caso">
+        <h3 id="caso-titulo"></h3>
+        <div id="caso-itens" class="caso__itens"></div>
+        <p id="caso-fonte" class="nota"></p>
+      </div>
+    </section>
+
+    <section id="regioes" class="wrap sec">
+      <h2>Participação por região</h2>
+      <p class="nota">Sul e Sudeste concentram a maior parte dos registros do período.</p>
+      <div id="grafico-regioes" class="barras" role="img" aria-label="Gráfico de barras: participação de cada região nos registros nacionais"></div>
+    </section>
+
+    <section class="wrap sec">
+      <h2>Inundação, enxurrada e alagamento não são a mesma coisa</h2>
+      <p class="nota">Definições do Ministério da Saúde. O NEXO não mistura as três ocorrências sem identificar a categoria.</p>
+      <div id="glossario" class="cards cards--3"></div>
+    </section>
+
+    <section id="fontes" class="wrap sec">
+      <h2>Transparência: o que sabemos sobre cada dado</h2>
+      <p class="nota">Cada camada mostra origem, cobertura e limitação. Filtre pela viabilidade de integração.</p>
+      <div class="filtros" role="group" aria-label="Filtrar por viabilidade">
+        <button type="button" class="chip is-on" data-filtro="todas">Todas</button>
+        <button type="button" class="chip" data-filtro="Alta">Alta</button>
+        <button type="button" class="chip" data-filtro="Parcial">Parcial</button>
+        <button type="button" class="chip" data-filtro="A validar">A validar</button>
+      </div>
+      <p id="contagem" class="nota" aria-live="polite"></p>
+      <div id="lista-fontes" class="fontes"></div>
+    </section>
+
+    <section id="escopo" class="wrap sec">
+      <h2>O que o MVP entrega</h2>
+      <div id="funcionalidades" class="cards cards--3"></div>
+      <div class="limites">
+        <h3>O que o NEXO não promete</h3>
+        <ul id="nao-promete"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap">
+      <p>NEXO · Global Solution 02/2026 · FIAP</p>
+      <p class="nota">Versão <span id="versao"></span> · Publicado automaticamente com GitHub Actions no Azure Static Web Apps.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+# NEXO — Inteligência Territorial para Prevenção de Riscos Climáticos
+
+Global Solution 02/2026 · Cloud Solutions & Scalable Infrastructure · 2TSC · CitizenTech
+
+## 1. Problema e proposta
+
+Entre 2013 e 2024 o Brasil registrou **18.145 decretações** de situação de emergência ou calamidade pública por chuvas intensas e eventos associados (Ministério da Saúde, com dados do S2ID). Saber onde choveu não basta: é preciso entender onde o evento encontra infraestrutura vulnerável e pessoas expostas.
+
+O **NEXO** é uma plataforma CitizenTech que integra dados públicos ambientais, hidrológicos, geográficos e socioeconômicos para ajudar gestores a identificar territórios expostos e priorizar ações preventivas. Primeiro caso de uso: inundações e eventos hidrológicos.
+
+A versão publicada nesta atividade é um **MVP de demonstração** do fluxo de CI/CD: indicadores históricos, participação por região e uma camada de **transparência** que mostra origem, cobertura e limitações de cada base de dados. O NEXO não promete prever enchentes nem emitir alertas oficiais.
+
+## 2. Integrantes
+
+| Nome | RM | Turma |
+|------|----|-------|
+| _preencher_ | _preencher_ | 2TSC |
+| _preencher_ | _preencher_ | 2TSC |
+
+## 3. Origem do projeto
+
+Criado pela equipe para esta Global Solution (tema definido no documento "Definição oficial de trabalho do NEXO"). Ferramentas de IA foram usadas como apoio à ideação, geração de código e configuração do workflow; a equipe compreende e consegue explicar todo o conteúdo.
+
+## 4. Tecnologias e como executar
+
+- HTML, CSS e JavaScript puros (site estático em `src/`)
+- Node.js 20 + [HTMLHint](https://htmlhint.com/) (validação) e `node:test` (testes)
+- GitHub Actions + Azure Static Web Apps
+
+```bash
+npm ci          # instala dependências de desenvolvimento
+npm run lint    # valida o HTML
+npm test        # roda os testes
+npm start       # abre o site localmente (serve src/)
+```
+
+## 5. Como o GitHub foi utilizado
+
+- **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: _colar link do Project_ · _colar link das Issues_
+- **Repositório:** branch `main` protegida pelo fluxo de PR e branches de trabalho (`feature/...`).
+- **Commits:** mensagens descritivas, histórico em _colar link de /commits_.
+- **Pull Requests:** toda alteração entra na `main` por PR, relacionada a uma Issue (`Closes #n`). Links: _colar links dos PRs_
+
+## 6. Workflow do GitHub Actions
+
+Arquivo: [`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure-static-web-apps.yml)
+
+**Gatilhos:** `push` na `main`, `pull_request` para a `main` (abertura, atualização, reabertura e fechamento) e execução manual (`workflow_dispatch`).
+
+| Job | O que faz |
+|-----|-----------|
+| `ci` | checkout → setup Node 20 → `npm ci` → `npm run lint` (HTMLHint) → `npm test` |
+| `deploy` | roda só se o `ci` passar; publica `src/` no Azure Static Web Apps (produção no push em `main`; ambiente de pré-visualização em PR) |
+| `close_pull_request` | ao fechar/mergear o PR, remove o ambiente de pré-visualização |
+
+**Segredos:** o token de deploy fica em *Settings → Secrets and variables → Actions* com o nome `AZURE_STATIC_WEB_APPS_API_TOKEN`. Nenhuma credencial é versionada.
+
+## 7. Nuvem e aplicação publicada
+
+- **Provedor/serviço:** Microsoft Azure — Static Web Apps
+- **URL da aplicação:** _colar a URL (https://....azurestaticapps.net)_
+
+## 8. Evidências
+
+As capturas de tela estão em [`docs/evidencias/`](docs/evidencias/):
+
+| Item | Evidência |
+|------|-----------|
+| Project/Issues (história, tarefas, responsáveis, status) | `01-project.png`, `02-issues.png` |
+| Repositório e branch `main` | `03-repositorio.png` |
+| Branch adicional, commits e PR/merge | `04-branches.png`, `05-commits.png`, `06-pull-request.png` |
+| Workflow configurado e execução com sucesso | `07-workflow-yml.png`, `08-actions-sucesso.png` |
+| Aplicação publicada no Azure | `09-app-azure.png` |
+| Nova alteração (versão 1.0.0 → 1.1.0) e deploy automático | `10-alteracao-codigo.png`, `11-actions-2a-execucao.png`, `12-app-atualizada.png` |
+
+## 9. Fontes dos dados exibidos
+
+Ministério da Saúde — Plano de Contingência Nacional para Emergências em Saúde Pública por Chuvas Intensas e Desastres Associados (2025), com dados do S2ID; SOS Rio Grande do Sul (balanço de ago/2025); Atlas Digital de Desastres (MIDR), CEMADEN, ANA, SGB e IBGE (camada de transparência).
+
+---
+O professor foi convidado como colaborador do repositório. Não há senhas, tokens ou credenciais neste repositório.
