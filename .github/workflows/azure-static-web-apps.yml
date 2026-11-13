@@ -9,7 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  # CI: instala dependências, valida o HTML e roda os testes.
   ci:
     name: CI (lint + testes)
     if: github.event_name != 'pull_request' || github.event.action != 'closed'
@@ -33,8 +32,6 @@ jobs:
       - name: Rodar testes
         run: npm test
 
-  # CD: só roda se o CI passou. Publica no Azure Static Web Apps.
-  # Em Pull Request cria um ambiente de pré-visualização; no push em main publica em produção.
   deploy:
     name: CD (deploy no Azure)
     needs: ci
@@ -57,7 +54,6 @@ jobs:
           output_location: ""
           skip_app_build: true
 
-  # Ao fechar/mergear o PR, remove o ambiente de pré-visualização.
   close_pull_request:
     name: Remover ambiente de preview
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
