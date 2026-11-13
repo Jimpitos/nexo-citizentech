@@ -77,3 +77,14 @@ As capturas de tela estão em [`docs/evidencias/`](docs/evidencias/):
 ## 9. Fontes dos dados exibidos
 
 Ministério da Saúde — Plano de Contingência Nacional para Emergências em Saúde Pública por Chuvas Intensas e Desastres Associados (2025), com dados do S2ID; SOS Rio Grande do Sul (balanço de ago/2025); Atlas Digital de Desastres (MIDR), CEMADEN, ANA, SGB e IBGE (camada de transparência).
+
+## 10. Histórico de problemas e como foram resolvidos
+
+Durante a integração com o Azure Static Web Apps houve falhas de deploy em alguns commits e no PR #6, antes do pipeline ficar estável:
+
+- O nome do secret criado pelo Azure tinha sufixo e estava diferente do usado no workflow.
+- O recurso exige autenticação OIDC do GitHub (`id-token: write` e `github_id_token`).
+- O arquivo do workflow precisa manter o nome gerado pelo Azure (`azure-static-web-apps-<nome>.yml`).
+- O job de remoção do preview precisava do token e do ID token (corrigido no PR #7).
+
+Os PRs #7, #8 e #9 mostram o fluxo completo funcionando (CI e deploy com sucesso).
