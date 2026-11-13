@@ -50,6 +50,7 @@ jobs:
           echo "tamanho: ${#T}"
           if [[ "$T" =~ [[:space:]] ]]; then echo "ATENCAO: tem espaco ou quebra de linha"; else echo "sem espacos"; fi
           if [[ "$T" =~ ^[A-Za-z0-9_-]+$ ]]; then echo "caracteres ok"; else echo "ATENCAO: tem caractere estranho"; fi
+          echo "impressao: $(printf %s "$T" | sha256sum | cut -c1-8)"
           
       - name: Publicar no Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
