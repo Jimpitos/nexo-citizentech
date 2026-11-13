@@ -14,9 +14,9 @@ A versão publicada nesta atividade é um **MVP de demonstração** do fluxo de 
 
 | Nome | RM | Turma |
 |------|----|-------|
-| Bruno Maurus | RM565659 | 2TSCV |
-| Igor Furtado | RM565061 | 2TSCV |
-| Lucas Matsuda| RM555295 | 2TSCV |
+| Bruno Pereira Maurus | RM565659 | 2TSCV |
+| Igor Furtado Braga | RM565061 | 2TSCV |
+| Lucas Miyoshi Matsuda| RM555295 | 2TSCV |
 
 ## 3. Origem do projeto
 
@@ -39,12 +39,12 @@ npm start       # abre o site localmente (serve src/)
 
 - **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: https://github.com/users/Jimpitos/projects/1 · https://github.com/Jimpitos/nexo-citizentech/issues
 - **Repositório:** branch `main` protegida pelo fluxo de PR e branches de trabalho (`feature/...`).
-- **Commits:** mensagens descritivas, histórico em _colar link de /commits_.
-- **Pull Requests:** toda alteração entra na `main` por PR, relacionada a uma Issue (`Closes #n`). Links: _colar links dos PRs_
+- **Commits:** mensagens descritivas, histórico em (https://github.com/Jimpitos/nexo-citizentech/actions)
+- **Pull Requests:** toda alteração entra na `main` por PR, relacionada a uma Issue (`Closes #n`). Links: (https://github.com/Jimpitos/nexo-citizentech/pull/5) · https://github.com/Jimpitos/nexo-citizentech/pull/6 · https://github.com/Jimpitos/nexo-citizentech/pull/7
 
 ## 6. Workflow do GitHub Actions
 
-Arquivo: [`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure-static-web-apps.yml)
+Arquivo: [`.github/workflows/azure-static-web-apps-ambitious-cliff-09af9f00f.yml`](.github/workflows/azure-static-web-apps-ambitious-cliff-09af9f00f.yml)
 
 **Gatilhos:** `push` na `main`, `pull_request` para a `main` (abertura, atualização, reabertura e fechamento) e execução manual (`workflow_dispatch`).
 
