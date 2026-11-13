@@ -77,7 +77,3 @@ As capturas de tela estão em [`docs/evidencias/`](docs/evidencias/):
 ## 9. Fontes dos dados exibidos
 
 Ministério da Saúde — Plano de Contingência Nacional para Emergências em Saúde Pública por Chuvas Intensas e Desastres Associados (2025), com dados do S2ID; SOS Rio Grande do Sul (balanço de ago/2025); Atlas Digital de Desastres (MIDR), CEMADEN, ANA, SGB e IBGE (camada de transparência).
-
----
-O professor foi convidado como colaborador do repositório. Não há senhas, tokens ou credenciais neste repositório.
-
