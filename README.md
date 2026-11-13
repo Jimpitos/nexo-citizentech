@@ -14,8 +14,9 @@ A versão publicada nesta atividade é um **MVP de demonstração** do fluxo de 
 
 | Nome | RM | Turma |
 |------|----|-------|
-| _preencher_ | _preencher_ | 2TSC |
-| _preencher_ | _preencher_ | 2TSC |
+| Bruno Maurus | RM565659 | 2TSCV |
+| Igor Furtado | RM565061 | 2TSCV |
+| Lucas Matsuda| RM555295 | 2TSCV |
 
 ## 3. Origem do projeto
 
@@ -36,7 +37,7 @@ npm start       # abre o site localmente (serve src/)
 
 ## 5. Como o GitHub foi utilizado
 
-- **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: _colar link do Project_ · _colar link das Issues_
+- **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: https://github.com/users/Jimpitos/projects/1 · https://github.com/Jimpitos/nexo-citizentech/issues
 - **Repositório:** branch `main` protegida pelo fluxo de PR e branches de trabalho (`feature/...`).
 - **Commits:** mensagens descritivas, histórico em _colar link de /commits_.
 - **Pull Requests:** toda alteração entra na `main` por PR, relacionada a uma Issue (`Closes #n`). Links: _colar links dos PRs_
@@ -77,5 +78,4 @@ As capturas de tela estão em [`docs/evidencias/`](docs/evidencias/):
 
 Ministério da Saúde — Plano de Contingência Nacional para Emergências em Saúde Pública por Chuvas Intensas e Desastres Associados (2025), com dados do S2ID; SOS Rio Grande do Sul (balanço de ago/2025); Atlas Digital de Desastres (MIDR), CEMADEN, ANA, SGB e IBGE (camada de transparência).
 
----
-O professor foi convidado como colaborador do repositório. Não há senhas, tokens ou credenciais neste repositório.
+
