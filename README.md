@@ -1,6 +1,6 @@
 # NEXO — Inteligência Territorial para Prevenção de Riscos Climáticos
 
-Global Solution 02/2026 · Cloud Solutions & Scalable Infrastructure · 2TSC · CitizenTech
+Global Solution 02/2026 · Cloud Solutions & Scalable Infrastructure · 2TSCV · CitizenTech
 
 ## 1. Problema e proposta
 
@@ -14,8 +14,9 @@ A versão publicada nesta atividade é um **MVP de demonstração** do fluxo de 
 
 | Nome | RM | Turma |
 |------|----|-------|
-| _preencher_ | _preencher_ | 2TSC |
-| _preencher_ | _preencher_ | 2TSC |
+| Bruno Maurus | RM565659 | 2TSCV |
+| Igor Furtado | RM565061 | 2TSCV |
+| Lucas Matsuda| RM555295 | 2TSCV |
 
 ## 3. Origem do projeto
 
@@ -36,7 +37,7 @@ npm start       # abre o site localmente (serve src/)
 
 ## 5. Como o GitHub foi utilizado
 
-- **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: _colar link do Project_ · _colar link das Issues_
+- **Projects/Issues:** quadro "NEXO — Entregas" com 1 história e 2+ tarefas, cada uma com responsável e status (Todo → In Progress → Done). Links: https://github.com/users/Jimpitos/projects/1 · https://github.com/Jimpitos/nexo-citizentech/issues
 - **Repositório:** branch `main` protegida pelo fluxo de PR e branches de trabalho (`feature/...`).
 - **Commits:** mensagens descritivas, histórico em _colar link de /commits_.
 - **Pull Requests:** toda alteração entra na `main` por PR, relacionada a uma Issue (`Closes #n`). Links: _colar links dos PRs_
@@ -58,7 +59,7 @@ Arquivo: [`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure
 ## 7. Nuvem e aplicação publicada
 
 - **Provedor/serviço:** Microsoft Azure — Static Web Apps
-- **URL da aplicação:** _colar a URL (https://....azurestaticapps.net)_
+- **URL da aplicação:** [_colar a URL (https://....azurestaticapps.net)_](https://ambitious-cliff-09af9f00f.8.azurestaticapps.net)
 
 ## 8. Evidências
 
@@ -79,3 +80,4 @@ Ministério da Saúde — Plano de Contingência Nacional para Emergências em S
 
 ---
 O professor foi convidado como colaborador do repositório. Não há senhas, tokens ou credenciais neste repositório.
+
