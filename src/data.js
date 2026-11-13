@@ -6,7 +6,7 @@
  * quando o CSV do Atlas Digital for analisado, substituir/ampliar este arquivo.
  */
 const NEXO_DATA = {
-  version: "1.0.0",
+  version: "1.1.0",
 
   indicadores: [
     {
