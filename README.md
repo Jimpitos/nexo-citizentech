@@ -1,6 +1,6 @@
 # NEXO — Inteligência Territorial para Prevenção de Riscos Climáticos
 
-Global Solution 02/2026 · Cloud Solutions & Scalable Infrastructure · 2TSC · CitizenTech
+Global Solution 02/2026 · Cloud Solutions & Scalable Infrastructure · 2TSCV · CitizenTech
 
 ## 1. Problema e proposta
 
@@ -59,7 +59,7 @@ Arquivo: [`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure
 ## 7. Nuvem e aplicação publicada
 
 - **Provedor/serviço:** Microsoft Azure — Static Web Apps
-- **URL da aplicação:** _colar a URL (https://....azurestaticapps.net)_
+- **URL da aplicação:** [_colar a URL (https://....azurestaticapps.net)_](https://ambitious-cliff-09af9f00f.8.azurestaticapps.net)
 
 ## 8. Evidências
 
@@ -77,5 +77,3 @@ As capturas de tela estão em [`docs/evidencias/`](docs/evidencias/):
 ## 9. Fontes dos dados exibidos
 
 Ministério da Saúde — Plano de Contingência Nacional para Emergências em Saúde Pública por Chuvas Intensas e Desastres Associados (2025), com dados do S2ID; SOS Rio Grande do Sul (balanço de ago/2025); Atlas Digital de Desastres (MIDR), CEMADEN, ANA, SGB e IBGE (camada de transparência).
-
-
