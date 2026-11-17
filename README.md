@@ -59,7 +59,7 @@ Arquivo: [`.github/workflows/azure-static-web-apps-ambitious-cliff-09af9f00f.yml
 ## 7. Nuvem e aplicação publicada
 
 - **Provedor/serviço:** Microsoft Azure — Static Web Apps
-- **URL da aplicação:** [_colar a URL (https://....azurestaticapps.net)_](https://ambitious-cliff-09af9f00f.8.azurestaticapps.net)
+- **URL da aplicação:** https://ambitious-cliff-09af9f00f.8.azurestaticapps.net
 
 ## 8. Evidências
 
